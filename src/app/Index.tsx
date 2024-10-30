@@ -14,6 +14,9 @@ import LIstData from '../componentsThree/LIstData'
 import ArrayOfObject from '../componentsThree/ArrayOfObject'
 import ParentComponent from '../componentsProp/ParentComponent'
 import Product from '../componentsProp/Product'
+import Condi from '../componentConditional/conditionalStatement'
+import ANDOperator from '../componentConditional/ANDOperator'
+import TernaryOperator from '../componentConditional/TernaryOperator'
 const Index = () => {
       
     const products=[
@@ -66,7 +69,7 @@ const Index = () => {
          //props
    <ParentComponent />
 
-      */}
+    
           //props prodcut list
       <FlatList 
         data={products} 
@@ -79,7 +82,15 @@ const Index = () => {
 
         )}
         />
+ 
+        //Conditional Statemnt
+     <Condi />
 
+      <ANDOperator/>
+      */}
+
+      <TernaryOperator/>
+      
   </View>
   );
 }
