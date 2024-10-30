@@ -17,8 +17,14 @@ import Product from '../componentsProp/Product'
 import Condi from '../componentConditional/conditionalStatement'
 import ANDOperator from '../componentConditional/ANDOperator'
 import TernaryOperator from '../componentConditional/TernaryOperator'
+import WithoutState from '../componentState/1.Basic Counter/WithoutState'
+import WithState from '../componentState/1.Basic Counter/WithState'
+import UpdateArray from '../componentState/2.Updating Arrays/UpdateArray'
+import UpdateObject from '../componentState/3.Update Objects/UpdateObject'
+import SharingState from '../componentState/4.Sharing State/SharingState'
 const Index = () => {
-      
+        
+     // work with below   3.
     const products=[
       {
         productName:'Laptop',
@@ -63,14 +69,14 @@ const Index = () => {
 
 
     
-           //objectList
+         //objectList   1.
      <ArrayOfObject />
 
-         //props
+         //props       2.
    <ParentComponent />
 
     
-          //props prodcut list
+          //props prodcut list work with Product.tsx  3.
       <FlatList 
         data={products} 
         renderItem={({item})=>(
@@ -87,10 +93,24 @@ const Index = () => {
      <Condi />
 
       <ANDOperator/>
-      */}
+     
 
       <TernaryOperator/>
+
       
+           //ComponentState
+       <WithoutState/>
+
+        <WithState/>
+    
+        <UpdateArray />
+
+        <UpdateObject />
+
+         */}
+
+         <SharingState />
+        
   </View>
   );
 }
